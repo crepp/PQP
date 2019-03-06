@@ -1,3 +1,7 @@
+# Pot qui pense - CREPP 2019
+# GPL V3.0
+# www.crepp.org - yvoz.lg@gmail.com
+
 import machine
 from ads1x15 import ADS1115
 

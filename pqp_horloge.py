@@ -1,3 +1,7 @@
+# Pot qui pense - CREPP 2019
+# GPL V3.0
+# www.crepp.org - yvoz.lg@gmail.com
+
 import machine
 from ds3231_port import DS3231
 
