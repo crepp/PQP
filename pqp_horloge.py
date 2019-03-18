@@ -24,5 +24,5 @@ def get_next():
 	mn = 60 - t[4] 
 	if mn <= 10 :
 		mn += 60
-	return mn + 5 # +5 à cause d'une grande dérive du RTC de l'ESP...
+	return round(mn * 1.18) # *1.2 à cause d'une grande dérive du RTC de l'ESP...
 
