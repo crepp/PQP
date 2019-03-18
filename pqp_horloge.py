@@ -21,8 +21,8 @@ def save_datetime(an, mo, jo, h, mn):
 def get_next():
 	# qt de mn jusqu'a la prochaine heure
 	t = ds.get_time()
-	mn = 60 - t[4]
-	if mn <= 5 :
+	mn = 60 - t[4] + 5 # +5 à cause d'une grande dérive du RTC de l'ESP 
+	if mn <= 10 :
 		mn += 60
 	return mn
 
