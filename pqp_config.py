@@ -7,6 +7,7 @@
 wifitime_hardreset = 3*60*1000
 
 # Durée du Wifi apres un reveil par l'alarme (deepsleep reset)
+# Cette durée doir être supérieure à la durée totale de la tache courante (l'arrosage)
 # wifitime = 15 secondes
 wifitime = 15*1000 
 
