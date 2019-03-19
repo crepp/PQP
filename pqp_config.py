@@ -7,12 +7,12 @@
 wifitime_hardreset = 3*60*1000
 
 # Durée du Wifi apres un reveil par l'alarme (deepsleep reset)
-# Cette durée doir être supérieure à la durée totale de la tache courante (l'arrosage)
+# Cette durée doit être supérieure à la durée totale de la tâche courante (l'arrosage)
 # wifitime = 15 secondes
 wifitime = 15*1000 
 
 # Durée de la mise en veille - 3 options possibles
-# sleeptime = -1: pas de mise en veille / 0: deepsleep jusqu'a la prochaine heure / 30*60*1000: 30mn de deepsleep
+# sleeptime = -1: pas de mise en veille / 0: deepsleep jusqu'à la prochaine heure / 30*60*1000: 30mn de deepsleep
 sleeptime = 0
 
 # Durée de la mise en action de la pompe - tenir compte du temps d'amorçage / la hauteur de pompage
