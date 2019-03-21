@@ -1,5 +1,7 @@
-# PQP
+# PQP - 
 Pot qui pense - Code Micropython - ESP8266
+
+http://www.crepp.org/projets/pot-qui-pense/
 
 ## Librairies utilisées
 
