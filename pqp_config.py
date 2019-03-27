@@ -15,8 +15,8 @@ wifitime = 15*1000
 # -1 : pas de mise en veille 
 #  0 : sleeptime jusqu'à la prochaine heure fixe 
 #  30*60*1000 : 30mn de mise en veille
-sleeptime = 0
-
+sleeptime = -1 #3*60*1000
+ 
 # Durée de la mise en action de la pompe - tenir compte du temps d'amorçage / la hauteur de pompage
 # pumptime = 5 secondes c'est pas mal
 pumptime = 5*1000

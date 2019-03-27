@@ -12,3 +12,8 @@ def test():
 	print(t.temperature())
 	#print(t.humidity())
 
+def get_temp():
+	t.measure()
+	tp = str(t.temperature())
+	return tp
+
