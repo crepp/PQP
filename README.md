@@ -10,7 +10,7 @@ https://github.com/robert-hh/ads1x15
 - Horloge - ds3231  
 https://github.com/peterhinch/micropython-samples/tree/master/DS3231
 
-- capteur de luminosite - bh1750  
+- Capteur de luminosite - bh1750  
 https://github.com/itechnofrance/micropython/tree/master/librairies/bh1750
 
 - Ecran oled - ssd1306  
