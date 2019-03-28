@@ -14,7 +14,7 @@ Convertisseur A/N
 ## Brochage bus et capteurs
 
 | Libellé             | GPIO Micropython  | ESP8266 | 
-| =================== | ================= | ======= |
+|---------------------|-------------------|---------|
 | I2C - sda           | Pin(4)            | D2      |
 | I2C - scl           | Pin(5)            | D1      |
 | Thermomètre - DHT22 | Pin(12)           | D6      |
@@ -23,7 +23,7 @@ Convertisseur A/N
 | Bouton d'arrosage   | Pin(9)            | SD2     |
 
 | Libellé             | Convertisseur A/N |
-| =================== | ================= |
+|---------------------|-------------------|
 | Hygromètre terre    | A0                |
 | Voltmètre batteries | A1                |
 
