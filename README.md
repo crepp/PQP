@@ -4,16 +4,16 @@ http://www.crepp.org/projets/pot-qui-pense/
 
 ## Librairies utilisées
 
-Convertisseur A/N - ads1115
+- Convertisseur A/N - ads1115  
 https://github.com/robert-hh/ads1x15
 
-Horloge - ds3231
+- Horloge - ds3231  
 https://github.com/peterhinch/micropython-samples/tree/master/DS3231
 
-capteur de luminosite - bh1750
+- Capteur de luminosite - bh1750  
 https://github.com/itechnofrance/micropython/tree/master/librairies/bh1750
 
-Ecran oled - ssd1306
+- Ecran oled - ssd1306  
 https://github.com/micropython/micropython/tree/master/drivers/display
 
 
@@ -26,7 +26,7 @@ https://github.com/micropython/micropython/tree/master/drivers/display
 | Thermomètre - DHT22 | Pin(12)           | D6      |
 | Relais pompe        | Pin(14)           | D5      |
 | Réveil alarme       | Pin(16)           | D0      |
-| Bouton d'arrosage   | Pin(9)            | SD2     |
+| Bouton d'arrosage   | Pin(0)            | D3      |
 
 | Libellé             | Convertisseur A/N |
 |---------------------|-------------------|
