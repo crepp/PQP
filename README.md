@@ -26,7 +26,7 @@ https://github.com/micropython/micropython/tree/master/drivers/display
 | Thermomètre - DHT22 | Pin(12)           | D6      |
 | Relais pompe        | Pin(14)           | D5      |
 | Réveil alarme       | Pin(16)           | D0      |
-| Bouton d'arrosage   | Pin(9)            | SD2     |
+| Bouton d'arrosage   | Pin(2)            | D4      |
 
 | Libellé             | Convertisseur A/N |
 |---------------------|-------------------|
