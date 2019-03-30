@@ -13,7 +13,10 @@ def test():
 	#print(t.humidity())
 
 def get_temp():
-	t.measure()
-	tp = str(t.temperature())
-	return tp
+	try:
+		t.measure()
+		tp = str(t.temperature())
+		return tp
+	except OSError:
+		return "-1"
 

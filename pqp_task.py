@@ -12,6 +12,7 @@ r.off()
 
 def start():
 	test()
+	time.sleep_ms(1000)
 	datalog()
 
 
@@ -25,7 +26,7 @@ def test():
 
 
 def datalog():
-	f = open("pqp_datalog.txt", "a")
+	f = open("pqp_datalog.csv", "a")
 	data = h.get_datehour() + "; "
 	data += t.get_temp() + "; " + "\n"
 	f.write(data)

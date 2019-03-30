@@ -20,14 +20,20 @@ def save_datetime(an, mo, jo, h, mn):
 
 def get_next():
 	# quantité de minutes jusqu'a la prochaine heure
-	t = ds.get_time()
+	try:
+		t = ds.get_time()
+	except OSError:
+		t[4] = 0
 	mn = 60 - t[4] 
 	if mn <= 10 :
 		mn += 60
 	return round(mn * 1.18) # *1.2 à cause d'une grande dérive du RTC de l'ESP...
 
 def get_datehour():
-	t = ds.get_time()
-	dateheure = str(t[0]) + "-" + str(t[1]) + "-" + str(t[2]) + " " + str(t[3]) + ":" + str(t[4])
-	return dateheure
+	try:
+		t = ds.get_time()
+		dateheure = str(t[0]) + "-" + str(t[1]) + "-" + str(t[2]) + " " + str(t[3]) + ":" + str(t[4])
+		return dateheure
+	except OSError:
+		return "-1"
 

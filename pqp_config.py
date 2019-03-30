@@ -12,10 +12,10 @@ wifitime_hardreset = 3*60*1000
 wifitime = 15*1000 
 
 # Durée de la mise en veille - 3 options possibles :
-# -1 : pas de mise en veille 
-#  0 : sleeptime jusqu'à la prochaine heure fixe 
-#  30*60*1000 : 30mn de mise en veille
-sleeptime = -1 #3*60*1000
+# -1 : pas de mise en veille : mode debug
+#  0 : sleeptime jusqu'à la prochaine heure fixe, c'est le fonctionnement normal du PQP
+#  30*60*1000 : 30mn de mise en veille : mode test
+sleeptime = 0 #1*60*1000 # réveil toutes les 1mn
  
 # Durée de la mise en action de la pompe - tenir compte du temps d'amorçage / la hauteur de pompage
 # pumptime = 5 secondes c'est pas mal
