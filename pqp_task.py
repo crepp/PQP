@@ -6,12 +6,13 @@ import machine, time
 import pqp_relais as r
 import pqp_horloge as h
 import pqp_thermometre as t
+import pqp_config as co
 import sys
 
 r.off()
 
 def start():
-	test()
+	pump()
 	time.sleep_ms(1000)
 	datalog()
 
@@ -23,6 +24,12 @@ def test():
 		r.on()
 		time.sleep_ms(250)
 		r.off()
+
+def pump():
+	# irrigation
+	r.on()
+	time.sleep_ms(co.pumptime)
+	r.off()
 
 
 def datalog():
