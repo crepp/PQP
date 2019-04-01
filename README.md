@@ -33,6 +33,7 @@ https://github.com/micropython/micropython/tree/master/drivers/display
 | Hygromètre terre    | A0                |
 | Voltmètre batteries | A1                |
 
+![esp8266-nodemcu-dev-kit-v2-pins-600x462](img/esp8266-nodemcu-dev-kit-v2-pins-600x462.png)
 
 ## Principe du cycle de réveil
 
