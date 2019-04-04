@@ -25,3 +25,15 @@ def get_a1():
 		return a1
 	except OSError:
 		return -1
+
+# Gain 0 : 6.144v
+# Dividing 6.144 volts by 32767 yields a scale factor of 0.1875 mV per bit.
+# Pont diviseur : 4.2 / 3.0 = 1.4
+
+def get_battery():
+	pts = get_a1()
+	if pts > 0:
+		vts = round(pts * 0.1875 * 1.4 / 10) / 100 # en Volt
+		return vts
+	else:
+		return -1

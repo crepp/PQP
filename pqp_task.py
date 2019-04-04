@@ -6,13 +6,15 @@ import machine, time
 import pqp_relais as r
 import pqp_horloge as h
 import pqp_thermometre as t
+import pqp_converan as c
 import pqp_config as co
 import sys
 
 r.off()
 
 def start():
-	pump()
+	test()
+	#pump()
 	time.sleep_ms(1000)
 	datalog()
 
@@ -35,7 +37,9 @@ def pump():
 def datalog():
 	f = open("pqp_datalog.csv", "a")
 	data = h.get_datehour() + "; "
-	data += t.get_temp() + "; " + "\n"
+	data += t.get_temp() + "; "
+	data += str(machine.reset_cause()) + "; "
+	data += str(c.get_battery()) + "; " + "\n"
 	f.write(data)
 	f.close()
 
