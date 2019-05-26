@@ -37,3 +37,11 @@ def get_datehour():
 	except OSError:
 		return "-1"
 
+def get_hour():
+	try:
+		t = ds.get_time()
+		heure = t[3]
+		return heure
+	except OSError:
+		return "-1"
+
