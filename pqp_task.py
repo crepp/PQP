@@ -20,7 +20,7 @@ def start():
 	#affichetemperature()
 	affichetemphygro()
 	affichebatteries()
-	datalog()
+	#datalog()
 
 def test():
 	# clignotement relais
